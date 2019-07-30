@@ -1,0 +1,54 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "title": "Redux is craazy 1",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 2,
+      "title": "Dispatch dem actions",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 3,
+      "title": "Where's my store at?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 4,
+      "title": "Wait, what's a reducer again?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 5,
+      "title": "Glorious Redux",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 6,
+      "title": "MapDispatchToProps + MapStateToProps",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 7,
+      "title": "Dude, where's my state?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 8,
+      "title": "Hello Redux!",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 9,
+      "title": "Who would've thunk it?",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    },
+    {
+      "id": 10,
+      "title": "What's an action creator??",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dui velit, sollicitudin sit amet gravida ut, consectetur id tellus. Phasellus ultrices sem eget nibh ultricies bibendum. Aliquam fringilla metus ut venenatis tincidunt. Quisque posuere sed felis ac lobortis. Vivamus id scelerisque eros, eu vulputate augue. Praesent euismod magna ex, eu facilisis lectus pharetra sit amet. Vivamus venenatis nunc felis, eu sodales augue condimentum et. Vivamus ac tortor sed tellus gravida tempor ac eget lorem. Donec non ultricies odio. Suspendisse vulputate nisl et ipsum viverra aliquam. Donec eu pellentesque ex, vitae mollis enim. Nulla euismod ipsum ut finibus dapibus. Proin eu malesuada neque, eget efficitur nisi. Ut finibus felis vel sapien facilisis, vel lacinia felis eleifend."
+    }
+  ]
+}

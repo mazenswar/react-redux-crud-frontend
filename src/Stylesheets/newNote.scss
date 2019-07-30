@@ -1,0 +1,34 @@
+$dark-grey: #262626;
+
+.new-note-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  input,
+  textarea {
+    font-size: 1.5vw;
+    padding: 2.5vw;
+    margin: 2vw;
+    border-radius: 2vw;
+    border: 1px solid $dark-grey;
+    &:focus {
+      outline: 0;
+      background-color: #eee;
+    }
+  }
+  input[type="text"] {
+    width: 50%;
+  }
+  textarea {
+    width: 70%;
+    height: 40vh;
+    border-radius: 2vw;
+  }
+  input[type="submit"] {
+    border-radius: 1vw;
+    padding: 1vw;
+    background-color: $dark-grey;
+    color: white;
+  }
+}

@@ -1,68 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React-Redux
 
-## Available Scripts
+## Essentials:
 
-In the project directory, you can run:
+## How to setup Redux with React from scratch:
 
-### `npm start`
+1. `npx create-react-app <app-name>`
+2. `cd <app-name> && npm i`
+3. `npm i react-redux && npm i redux && npm i redux-thunk`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Core pieces of using Redux with React:
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+1. Reducers.
+2. `<Provider>` and store.
+3. action Objects.
+4. Thunk, dispatch and async actions.
 
-### `npm test`
+## Action objects
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+action objects are plain javascript objects that reducers use to do some action to the state. Action objects require ONE key "type" which specifies what type of action needs to be taken in regards to the state. However, action objects are usualy dispatched with TWO sets of keys and values. The key 'type' is always, required. The second key and value pair is used to hold data that you want to update the state with.
+example:
+`{ type: 'CREATE_NEW_NOTE', payload: noteData }`
 
-### `npm run build`
+## Reducers
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+reducers are functions that take in TWO arguments: the current state (with a default argument if no state exists), and an action object and ALWAYS return ONE thing, which is a copy of updated state, or the current state if no changes have been made to it. Reducers handle the logic of updating the state based on the action object's type value.
+example:
+`const initialState = []; export default (state = initialState, { type, payload }) => { switch (type) { case "GET_NOTES": return payload; case "CREATE_NOTE": return [...state, payload]; case "DELETE_NOTE": return handleDeleteNote(state, payload); case "UPDATE_NOTE": return handleUpdateNote(state, payload); default: return state; } };`
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Creating a store and making it available in your app.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `import thunk from 'redux-thunk`
+- `import { Provider } from 'react-redux`
+- `import { createStore, applyMiddleware} from 'redux'`
+- `import { yourReducer } from 'somefile'`
 
-### `npm run eject`
+- At the highest level of your app (index.js):
+  1. Initialize your store and save it to a variable:
+     `const store = createStore(yourReducer, applyMiddleware(thunk))`
+  2. Wrap the component the component you are rendering with the `<Provider>` tag imported from `'react-redux'` and pass it the store variable under the key "store":
+     `<Provider store={store}> <App/> </Provider>`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Connecting your component to your app's Redux store.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Connect is used to connect your Redux store to your props. connect takes it TWO sets of parentheses when invoked. The first parentheses will take in TWO arguments `(mapStateToProps, mapDispatchToProps)`. The second parentheses will take in the actual component you are exporting.
+   - if you do not need to `mapStateToProps`, your first parentheses should look like this `(null, mapDispatchToProps)`
+   - if you do not need to mapDispatchToProps, you can ommit it from the first parentheses which should
+2. mapStateToProps: This will grab the state from the store and add it to your props.
+   example `const mapStateToProps = state => ({ notes: state });`
+3. mapDispatchToProps: This will add any functions you provide it to your props AND pass in "dispatch" (under the hood) as an argument when they're invoked.
+   example: `const mapDispatchToProps = { deleteNoteFromDB }`
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+4. These blocks of code will live OUTSIDE your React Component definition and will be used when exporting the component:
+   `export default connect(mapStateToProps, mapDispatchToProps)(ShowNote)`

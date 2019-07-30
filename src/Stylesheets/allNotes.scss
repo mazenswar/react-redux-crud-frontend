@@ -1,0 +1,25 @@
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  h2 {
+    padding: 4vw;
+  }
+  .single-note-link {
+    width: 100%;
+    padding: 2vw;
+    margin: 0.5vw 2vw;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    transition: 0.5s;
+    &:hover {
+      background-color: #262626;
+      color: white;
+    }
+  }
+}

@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { connect } from "react-redux";
+import { BrowserRouter as Router } from "react-router-dom";
+import Nav from "./Components/Master/Nav";
+import Routes from "./Components/Master/Routes/Routes";
+import { fetchNotesFromDB } from "./Redux/adapters/notesAdapter";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  componentDidMount() {
+    const { fetchNotesFromDB } = this.props;
+    fetchNotesFromDB();
+  }
+
+  render() {
+    return (
+      <Router>
+        <h1>Redux CRUD</h1>
+        <Nav />
+        <Routes />
+      </Router>
+    );
+  }
 }
 
-export default App;
+const mapDispatchToProps = {
+  fetchNotesFromDB
+};
+
+export default connect(
+  null,
+  mapDispatchToProps
+)(App);

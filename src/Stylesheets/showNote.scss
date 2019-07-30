@@ -1,0 +1,22 @@
+.show-note-container {
+  width: 70%;
+  margin: auto;
+  padding: 3vw;
+  text-align: justify;
+  h2 {
+    text-align: center;
+  }
+  .show-button {
+    border: 1px solid #262626;
+    margin: 3vw;
+    padding: 1vw;
+    text-decoration: none;
+    color: #eeeeee;
+    background-color: #262626;
+    transition: 0.8s;
+    &:hover {
+      color: #262626;
+      background-color: #eee;
+    }
+  }
+}
