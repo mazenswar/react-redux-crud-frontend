@@ -25,7 +25,8 @@ example:
 
 reducers are functions that take in TWO arguments: the current state (with a default argument if no state exists), and an action object and ALWAYS return ONE thing, which is a copy of updated state, or the current state if no changes have been made to it. Reducers handle the logic of updating the state based on the action object's type value.
 example:
-`const initialState = []; export default (state = initialState, { type, payload }) => { switch (type) { case "GET_NOTES": return payload; case "CREATE_NOTE": return [...state, payload]; case "DELETE_NOTE": return handleDeleteNote(state, payload); case "UPDATE_NOTE": return handleUpdateNote(state, payload); default: return state; } };`
+
+![Reducer Example](reducer.png)
 
 ## Creating a store and making it available in your app.
 
