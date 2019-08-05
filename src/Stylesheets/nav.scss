@@ -9,7 +9,7 @@ h1 {
 nav {
   position: fixed;
   right: 3vw;
-  top: 5vw;
+  top: 10vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -23,6 +23,7 @@ nav {
     color: #eeeeee;
     width: 8vw;
     height: 8vw;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;

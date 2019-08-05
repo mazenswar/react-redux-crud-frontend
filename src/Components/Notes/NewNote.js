@@ -20,8 +20,6 @@ class NewNote extends Component {
   };
 
   render() {
-    console.log(this.state);
-
     const { title, content } = this.state;
     return (
       <form className="new-note-form" onSubmit={this.handleSubmit}>
