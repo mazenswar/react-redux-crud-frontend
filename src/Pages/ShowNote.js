@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import { connect } from "react-redux";
-import { Link, withRouter } from "react-router-dom";
-import { deleteNoteFromDB } from "../../Redux/adapters/notesAdapter";
-import "../../Stylesheets/showNote.scss";
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
+import noteActions from '../Redux/actions/noteActions';
 
 const ShowNote = props => {
   const noteId = parseInt(props.match.params.id);
@@ -12,7 +11,7 @@ const ShowNote = props => {
   const handleDelete = () => {
     const { deleteNoteFromDB, history } = props;
     deleteNoteFromDB(noteId);
-    history.push("/notes");
+    history.push('/notes');
   };
 
   if (note) {
@@ -35,12 +34,10 @@ const ShowNote = props => {
 const mapStateToProps = state => ({ notes: state });
 
 const mapDispatchToProps = {
-  deleteNoteFromDB
+  deleteNoteFromDB: noteActions.deleteNoteFromDB
 };
 
-export default withRouter(
-  connect(
-    mapStateToProps,
-    mapDispatchToProps
-  )(ShowNote)
-);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(ShowNote);

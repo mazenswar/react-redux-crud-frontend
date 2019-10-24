@@ -1,13 +1,11 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { withRouter } from "react-router-dom";
-import { newNoteToDB } from "../../Redux/adapters/notesAdapter";
-import "../../Stylesheets/newNote.scss";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import noteActions from '../Redux/actions/noteActions';
 
 class NewNote extends Component {
   state = {
-    title: "",
-    content: ""
+    title: '',
+    content: ''
   };
 
   handleChange = e => this.setState({ [e.target.name]: e.target.value });
@@ -16,7 +14,7 @@ class NewNote extends Component {
     e.preventDefault();
     const { newNoteToDB, history } = this.props;
     newNoteToDB(this.state);
-    history.push("/notes");
+    history.push('/notes');
   };
 
   render() {
@@ -38,12 +36,10 @@ class NewNote extends Component {
 }
 
 const mapDispatchToProps = {
-  newNoteToDB
+  newNoteToDB: noteActions.newNoteToDB
 };
 
-export default withRouter(
-  connect(
-    null,
-    mapDispatchToProps
-  )(NewNote)
-);
+export default connect(
+  null,
+  mapDispatchToProps
+)(NewNote);

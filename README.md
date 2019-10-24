@@ -17,13 +17,13 @@
 
 ## Action objects
 
-action objects are plain javascript objects that reducers use to do some action to the state. Action objects require ONE key "type" which specifies what type of action needs to be taken in regards to the state. However, action objects are usualy dispatched with TWO sets of keys and values. The key 'type' is always, required. The second key and value pair is used to hold data that you want to update the state with.
+action objects are plain javascript objects that reducers use to perform some action to the state. Action objects require ONE key "type" which specifies the type of action that needs to be taken toc change/update the state. However, action objects are usualy dispatched with TWO sets of keys and values (see below). The key 'type' is always, required. The second key and value pair is used to hold data that you want to use in updating the state.
 example:
 `{ type: 'CREATE_NEW_NOTE', payload: noteData }`
 
 ## Reducers
 
-reducers are functions that take in TWO arguments: the current state (with a default argument if no state exists), and an action object and ALWAYS return ONE thing, which is a copy of updated state, or the current state if no changes have been made to it. Reducers handle the logic of updating the state based on the action object's type value.
+reducers are pure functions that take in TWO arguments: the current state (with a default argument if no state exists), and an action object and ALWAYS return ONE thing, which is a fresh copy of an updated state, or the current state if no changes have been made to it. Reducers handle the logic of updating the state based on the action object's type value.
 example:
 
 ![Reducer Example](reducer.png)
@@ -33,7 +33,7 @@ example:
 - `import thunk from 'redux-thunk`
 - `import { Provider } from 'react-redux`
 - `import { createStore, applyMiddleware} from 'redux'`
-- `import { yourReducer } from 'somefile'`
+- `import { yourReducer } from '<somefile>'`
 
 - At the highest level of your app (index.js):
   1. Initialize your store and save it to a variable:
